@@ -5,9 +5,9 @@ import { isValidateObjectRequest } from "../../../helpers/validate";
 export class UserController {
 
     public listar(req: Request, res: Response){
-        res.status(200).json({message: 'teste teste teste...'});
-        /*const contatos = loadContatos();
-        res.send(contatos);*/
+        res.status
+        const contatos = loadContatos();
+        res.send(contatos);
     }
 
     public criar(req: Request, res: Response) {
@@ -46,12 +46,13 @@ export class UserController {
 
     public atualizar(req: Request, res: Response){
         res.status(200).json({
-            update: 'FUNÇÃO UPDTATE',
+            UPDATE: 'FUNÇÃO UPDTATE',
         });
     }
 
     public excluir(req: Request, res: Response){
-        res.status(200).json({delete: 'FUNÇÃO DESTROY',
+        res.status(200).json({
+            DELETE: 'FUNÇÃO DELETE',
         });
     }
 }

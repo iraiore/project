@@ -20,4 +20,4 @@ function isValidateObjectRequest(request: any, inputs: any[]) {
     return message.length == 0 ? true : message;
 }
 
-export { /*isValidateRequest,*/ isValidateObjectRequest}
+export { /*isValidateRequest*/, isValidateObjectRequest}

@@ -5,9 +5,8 @@ import { isValidateObjectRequest } from "../../../helpers/validate";
 export class UserController {
 
     public listar(req: Request, res: Response){
-        res.status(200).json({message: 'teste teste teste...'});
         /*const contatos = loadContatos();
-        res.send(contatos);*/
+        res.send(contatos);
     }
 
     public criar(req: Request, res: Response) {

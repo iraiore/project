@@ -6,7 +6,7 @@
             if(request.body[inputs[i]] == undefined || request.body[inputs[i]] == "")
                 return false;
         }
-}*/
+}
 
 function isValidateObjectRequest(request: any, inputs: any[]) {
     let message = [];
@@ -20,4 +20,4 @@ function isValidateObjectRequest(request: any, inputs: any[]) {
     return message.length == 0 ? true : message;
 }
 
-export { /*isValidateRequest,*/ isValidateObjectRequest}
+export { isValidateRequest, isValidateObjectRequest}
