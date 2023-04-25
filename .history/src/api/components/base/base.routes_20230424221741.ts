@@ -15,7 +15,7 @@ export  class BaseRoutes {
     private init(): void {
         this.router.get('/', this.controller.index);
         this.router.get('/info', this.controller.info);
-        this.router.get('/dev', this.controller.dev)
+        this.router.get('/dev, this.controller.dev)
     }
 
     public routes(): Router {

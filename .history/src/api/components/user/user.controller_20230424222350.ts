@@ -5,8 +5,9 @@ import { isValidateObjectRequest } from "../../../helpers/validate";
 export class UserController {
 
     public list(req: Request, res: Response){
+        //res.status(200).json({message: 'teste teste teste...'});
         const contatos = loadContatos();
-        res.status(200).json(contatos);
+        res.send(contatos);*/
     }
 
     public create(req: Request, res: Response) {
@@ -15,20 +16,12 @@ export class UserController {
 
         const inputs = [
             {
-                name: "nome",
-                message: "A propriedade [nome] não deve estar indefinida/vazio!"
+            name: "nome",
+            message: "A propriedade [nome] não deve estar indefinida/vazio!"
             },
             {
                 name: "email",
                 message: "A propriedade [email] não deve estar indefinida/vazio!"
-            },
-            {
-                name: "usuario",
-                message: 'A propriedade [usuario] não pode estar vazia'
-            },
-            {
-                name: "situacao",
-                message: 'A propriedade [status] não pode estar vazia'
             }
         ];
 
@@ -45,7 +38,7 @@ export class UserController {
             saveContato(req.body)
         }
 
-        res.status(201).json({
+        res.send({
             sucess: ok,
             message: mensagem
         })

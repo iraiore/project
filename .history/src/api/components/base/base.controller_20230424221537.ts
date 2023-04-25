@@ -18,7 +18,7 @@ export class BaseController {
         });
     }
 
-    public dev(req: Request, res: Response) {
+    public (req: Request, res: Response) {
         res.status(200).json({
             nome: 'Pedro Yago',
             email: 'yagoiraiore@gmail.com',

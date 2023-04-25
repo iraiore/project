@@ -12,10 +12,10 @@ export class UserRoutes {
     }
 
     private init(): void {
-        this.router.get('/user', this.controller.list);
-        this.router.post('/user', this.controller.create);
-        this.router.put('/user/:id', this.controller.update);
-        this.router.delete('/user/:id', this.controller.delete);
+        this.router.get('/list', this.controller.listar);
+        this.router.post('/create', this.controller.criar);
+        this.router.put('/update/:id', this.controller.atualizar);
+        this.router.delete('/delete/', this.controller.excluir);
     }
 
     public routes(): Router {

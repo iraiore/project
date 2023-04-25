@@ -19,15 +19,15 @@ export class UserController {
                 message: "A propriedade [nome] não deve estar indefinida/vazio!"
             },
             {
-                name: "email",
+                email: "email",
                 message: "A propriedade [email] não deve estar indefinida/vazio!"
             },
             {
-                name: "usuario",
-                message: 'A propriedade [usuario] não pode estar vazia'
+                user: "usuario",
+                message: 'A propriedade [nome de usuario] não pode estar vazia'
             },
             {
-                name: "situacao",
+                status: "situação",
                 message: 'A propriedade [status] não pode estar vazia'
             }
         ];
@@ -45,7 +45,7 @@ export class UserController {
             saveContato(req.body)
         }
 
-        res.status(201).json({
+        res.send({
             sucess: ok,
             message: mensagem
         })

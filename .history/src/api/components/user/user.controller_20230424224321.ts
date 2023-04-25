@@ -25,11 +25,11 @@ export class UserController {
             {
                 name: "usuario",
                 message: 'A propriedade [usuario] não pode estar vazia'
-            },
+            }/*,
             {
-                name: "situacao",
+                name: "situação",
                 message: 'A propriedade [status] não pode estar vazia'
-            }
+            }*/
         ];
 
         const checkValidate = isValidateObjectRequest(req,inputs);
